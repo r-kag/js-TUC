@@ -1,0 +1,22 @@
+#tucboard {
+    width: 483px;
+    height: 483px;
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.square {
+    height: 23px;
+    width: 23px;
+
+}
+
+.beige {
+    background-color: rgb(110, 110, 98);
+}
+
+.brown {
+    background-color: rgb(169, 43, 43);
+}
