@@ -13,8 +13,14 @@
 
 }
 
+.square svg {
+    height: 13px;
+    width: 13px;
+    margin: 3;
+}
+
 .beige {
-    background-color: rgb(110, 110, 98);
+    background-color: rgb(99, 73, 21);
 }
 
 .brown {
