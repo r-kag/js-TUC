@@ -10,6 +10,7 @@
 .square {
     height: 23px;
     width: 23px;
+    position: relative;
 
 }
 
@@ -17,6 +18,18 @@
     height: 13px;
     width: 13px;
     margin: 3;
+    position: relative;
+    z-index: -9;
+}
+
+path {
+    position: relative;
+    z-index: -10;
+}
+
+.peice {
+    position: relative;
+    z-index: 9;
 }
 
 .beige {
