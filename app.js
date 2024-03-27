@@ -4,32 +4,32 @@ const infoDisplay = document.querySelector("#info-display")
 const width = 21
 
 const startPieces = [
-    greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole,
-    greenHole, '', '', '', '', '', '', '', '', '', '', redHole, '', '', '', '', '', '', '', '', redHole,
-    greenHole, '', '', '', '', '', '', '', '', '', '', redHole, '', '', '', '', '', '', '', '', redHole,
-    greenHole, '', '', '', '', '', '', '', '', '', '', redHole, '', '', '', '', '', '', '', '', redHole,
-    greenHole, '', '', '', greenPin, '', '', '', '', '', '', redHole, '', redPin, redPin, redPin, redPin, '', '', '', redHole,
-    greenHole, '', '', '', greenPin, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole,
-    greenHole, '', '', '', greenPin, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole,
-    greenHole, '', '', '', greenPin, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole,
-    greenHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole,
-    greenHole, greenHole, greenHole, greenHole, greenHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole,
-    blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole,
-    blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', yellowHole, yellowHole, yellowHole, yellowHole, yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', yellowPin, '', '', '', yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', yellowPin, '', '', '', yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', yellowPin, '', '', '', yellowHole,
-    blueHole, '', '', '', bluePin, bluePin, bluePin, bluePin, '', blueHole, '', '', '', '', '', '', yellowPin, '', '', '', yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', blueHole, '', '', '', '', '', '', '', '', '', '', yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', blueHole, '', '', '', '', '', '', '', '', '', '', yellowHole,
-    blueHole, '', '', '', '', '', '', '', '', blueHole, '', '', '', '', '', '', '', '', '', '', yellowHole,
-    blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole,
+    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
+    '', greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, greenHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, redHole, '',
+    '', greenHole, '', '', '', '', '', '', '', '', redHole, '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, '', '', '', '', '', '', '', '', redHole, '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, '', '', '', '', '', '', '', '', redHole, '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, '', '', '', greenPin, '', '', '', '', redHole, '', redPin, redPin, redPin, redPin, '', '', '', redHole, '',
+    '', greenHole, '', '', '', greenPin, '', '', '', '', '', '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, '', '', '', greenPin, '', '', '', '', '', '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, '', '', '', greenPin, '', '', '', '', '', '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', redHole, '',
+    '', greenHole, greenHole, greenHole, greenHole, greenHole, '', '', '', '', '', '', '', '', '', yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', yellowPin, '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', yellowPin, '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', '', '', '', '', '', yellowPin, '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', bluePin, bluePin, bluePin, bluePin, '', blueHole, '', '', '', '', yellowPin, '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', blueHole, '', '', '', '', '', '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', blueHole, '', '', '', '', '', '', '', '', yellowHole, '',
+    '', blueHole, '', '', '', '', '', '', '', '', blueHole, '', '', '', '', '', '', '', '', yellowHole, '',
+    '', blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, blueHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, yellowHole, '',
+    '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '',
 
 
 ]
 
-
+//YT 15:51
 function createBoard() {
     startPieces.forEach((startPiece, i) => {
         const square = document.createElement('div')
@@ -46,7 +46,7 @@ function createBoard() {
 
 createBoard()
 
-const allSquares = document.querySelectorAll("gameboard .square")
+const allSquares = document.querySelectorAll("#tucboard .square")
 
 allSquares.forEach(square => {
     square.addEventListener('dragstart', dragStart)
