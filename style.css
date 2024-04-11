@@ -1,3 +1,7 @@
+#rightcolumn {
+    margin-left: 590px;
+}
+
 #tucboard,
 #tucpieces {
     width: 483px;
@@ -48,4 +52,28 @@ path {
 
 .brown {
     background-color: rgb(169, 43, 43);
+}
+
+.card {
+    /* card border*/
+    display: block;
+    border: solid 2px black;
+    width: 30px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.card>p {
+    /* card number*/
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding: 0;
+    margin: 0;
+    left: 15px;
+}
+
+.card>p+p {
+    /* card suit*/
+    color: red;
 }

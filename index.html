@@ -10,12 +10,25 @@
 <body>
     <div id="tucboard"></div>
     <div id="tucpieces"></div>
-    <p>It is <span id="player"></span> go.</p>
-    <p id="info-display"></p>
+    <div id="rightcolumn">
+        <script src="pieces.js"></script>
+        <script src="app.js"></script>
+        <script src="script.js" type="module"></script>
+        <script src="cards.js"></script>
 
-    <script src="pieces.js"></script>
-    <script src="app.js"></script>
-    <script src="script.js" type="module"></script>
+        <p id="info-display"></p>
+        <button onclick="shuffleCards();">Shuffle</button>
+        <div><button onclick="showHand('red');">Red Cards</button>
+            <button onclick="showHand('green');">Green Cards</button>
+            <button onclick="showHand('blue');">Blue Cards</button>
+            <button onclick="showHand('yellow');">Yellow Cards</button>
+        </div>
+        <div id="card-display"></div>
+        <div id="Game-Winner"></div>
+    </div>
+
+
+    <div id="cardTemplate" class="card" style="display:none"></div>
 
 </body>
 
